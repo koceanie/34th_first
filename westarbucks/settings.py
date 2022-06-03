@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-from westarbucks.my_settings import DATABASES, SECRET_KEY
+from my_settings import DATABASES, SECRET_KEY
 
 import pymysql
 pymysql.install_as_MySQLdb()
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders'
+    'corsheaders',
     'products'
 ]
 
