@@ -31,7 +31,7 @@ class Allergy(models.Model):
         db_table = 'allergies'
 
 class AllergyDrink(models.Model):
-    name     = models.CharField(max_length=20)
+    name    = models.CharField(max_length=20)
     allergy = models.ForeignKey('Allergy', on_delete=models.CASCADE)
     product = models.ForeignKey('Product', on_delete=models.CASCADE)
 
